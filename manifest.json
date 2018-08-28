@@ -1,0 +1,13 @@
+{
+  "manifest_version": 2,
+  "name": "Outlook Adblock Plugin",
+  "description": "This chrome extension will remove the advertisements when using the online Outlook application.",
+  "version": "1.0.0",
+  "content_scripts": [
+    {
+      "js": ["index.js"],
+      "matches": ["https://outlook.live.com/*"],
+      "run_at": "document_end"
+    }
+  ]
+}
